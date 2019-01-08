@@ -16,6 +16,7 @@
 		04B2F96C21E3B11A00943A30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B2F96B21E3B11A00943A30 /* main.m */; };
 		04B2F97621E3B11A00943A30 /* HMUIKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B2F97521E3B11A00943A30 /* HMUIKitTests.m */; };
 		04B2F98121E3B11A00943A30 /* HMUIKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B2F98021E3B11A00943A30 /* HMUIKitUITests.m */; };
+		04D18C8021E4ECE700713976 /* HMPopTriangleBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D18C7F21E4ECE700713976 /* HMPopTriangleBgView.m */; };
 		9345445174A2DF41ED48743C /* libPods-HMUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDBE629CF8255C7330ADCB5 /* libPods-HMUIKit.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,8 @@
 		04B2F97C21E3B11A00943A30 /* HMUIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HMUIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B2F98021E3B11A00943A30 /* HMUIKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMUIKitUITests.m; sourceTree = "<group>"; };
 		04B2F98221E3B11A00943A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D18C7E21E4ECE700713976 /* HMPopTriangleBgView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMPopTriangleBgView.h; sourceTree = "<group>"; };
+		04D18C7F21E4ECE700713976 /* HMPopTriangleBgView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMPopTriangleBgView.m; sourceTree = "<group>"; };
 		41B5ABB65BEF73844E19858D /* Pods-HMUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-HMUIKit/Pods-HMUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		5EF608F3C4B5F4270A87BEB6 /* Pods-HMUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HMUIKit/Pods-HMUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		7CDBE629CF8255C7330ADCB5 /* libPods-HMUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HMUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +125,7 @@
 		04B2F95B21E3B11900943A30 /* HMUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				04D18C7C21E4E98F00713976 /* HMUIKit */,
 				042208F521E3C10000AF8BF2 /* Category */,
 				04B2F95C21E3B11900943A30 /* AppDelegate.h */,
 				04B2F95D21E3B11900943A30 /* AppDelegate.m */,
@@ -152,6 +156,23 @@
 				04B2F98221E3B11A00943A30 /* Info.plist */,
 			);
 			path = HMUIKitUITests;
+			sourceTree = "<group>";
+		};
+		04D18C7C21E4E98F00713976 /* HMUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				04D18C7D21E4EBF200713976 /* UIVIew */,
+			);
+			path = HMUIKit;
+			sourceTree = "<group>";
+		};
+		04D18C7D21E4EBF200713976 /* UIVIew */ = {
+			isa = PBXGroup;
+			children = (
+				04D18C7E21E4ECE700713976 /* HMPopTriangleBgView.h */,
+				04D18C7F21E4ECE700713976 /* HMPopTriangleBgView.m */,
+			);
+			path = UIVIew;
 			sourceTree = "<group>";
 		};
 		9535D0AB5477868A543DC529 /* Frameworks */ = {
@@ -331,6 +352,7 @@
 			files = (
 				04B2F96121E3B11900943A30 /* ViewController.m in Sources */,
 				04B2F96C21E3B11A00943A30 /* main.m in Sources */,
+				04D18C8021E4ECE700713976 /* HMPopTriangleBgView.m in Sources */,
 				04B2F95E21E3B11900943A30 /* AppDelegate.m in Sources */,
 				042208F821E3C10000AF8BF2 /* NSMutableAttributedString+HMSeting.m in Sources */,
 			);

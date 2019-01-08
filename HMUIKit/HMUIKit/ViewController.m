@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "NSMutableAttributedString+HMSeting.h"
 #import <Masonry.h>
+#import "HMPopTriangleBgView.h"
 @interface ViewController ()
 
 @end
@@ -18,19 +19,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    UILabel * label = [UILabel new];
+//    UILabel * label = [UILabel new];
+//
+//    [self.view addSubview:label];
+//    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.center.equalTo(self.view);
+//    }];
+//    NSMutableAttributedString * s = [[NSMutableAttributedString alloc]initWithString:@"我觉得特别的完美"];
+//    [s addColor:UIColor.orangeColor];
+//    [s addDeleStyle:NSUnderlineStyleSingle rangeString:@"完美"];
+//    //    [s addLigature];
+////    [s addUnderline];
+//    label.attributedText = s;
     
-    [self.view addSubview:label];
-    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+    HMPopTriangleBgView * bgView = [HMPopTriangleBgView new]
+    ;
+    [self.view addSubview:bgView];
+    [bgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.view);
+        make.width.mas_equalTo(200);
+        make.height.mas_equalTo(50);
     }];
-    NSMutableAttributedString * s = [[NSMutableAttributedString alloc]initWithString:@"我觉得特别的完美"];
-    [s addColor:UIColor.orangeColor];
-    [s addDeleStyle:NSUnderlineStyleSingle rangeString:@"完美"];
-    //    [s addLigature];
-//    [s addUnderline];
-    label.attributedText = s;
-    
 }
 
 
