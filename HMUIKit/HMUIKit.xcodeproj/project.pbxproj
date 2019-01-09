@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,10 @@
 		04B2F98121E3B11A00943A30 /* HMUIKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B2F98021E3B11A00943A30 /* HMUIKitUITests.m */; };
 		04D18C8021E4ECE700713976 /* HMPopTriangleBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D18C7F21E4ECE700713976 /* HMPopTriangleBgView.m */; };
 		9345445174A2DF41ED48743C /* libPods-HMUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDBE629CF8255C7330ADCB5 /* libPods-HMUIKit.a */; };
+		9BD0A14221E5BA0C005EF471 /* PopTriangleBgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A14121E5BA0C005EF471 /* PopTriangleBgViewController.m */; };
+		9BD0A14521E5D106005EF471 /* VibrancyEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A14421E5D106005EF471 /* VibrancyEffectViewController.m */; };
+		9BD0A14821E5E241005EF471 /* HMVisualEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A14721E5E241005EF471 /* HMVisualEffectView.m */; };
+		9BD0A14B21E5E6B1005EF471 /* HMPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A14A21E5E6B1005EF471 /* HMPopViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,14 @@
 		41B5ABB65BEF73844E19858D /* Pods-HMUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-HMUIKit/Pods-HMUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		5EF608F3C4B5F4270A87BEB6 /* Pods-HMUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HMUIKit/Pods-HMUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		7CDBE629CF8255C7330ADCB5 /* libPods-HMUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HMUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD0A14021E5BA0C005EF471 /* PopTriangleBgViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopTriangleBgViewController.h; sourceTree = "<group>"; };
+		9BD0A14121E5BA0C005EF471 /* PopTriangleBgViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopTriangleBgViewController.m; sourceTree = "<group>"; };
+		9BD0A14321E5D106005EF471 /* VibrancyEffectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VibrancyEffectViewController.h; sourceTree = "<group>"; };
+		9BD0A14421E5D106005EF471 /* VibrancyEffectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VibrancyEffectViewController.m; sourceTree = "<group>"; };
+		9BD0A14621E5E241005EF471 /* HMVisualEffectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMVisualEffectView.h; sourceTree = "<group>"; };
+		9BD0A14721E5E241005EF471 /* HMVisualEffectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMVisualEffectView.m; sourceTree = "<group>"; };
+		9BD0A14921E5E6B1005EF471 /* HMPopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMPopViewController.h; sourceTree = "<group>"; };
+		9BD0A14A21E5E6B1005EF471 /* HMPopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMPopViewController.m; sourceTree = "<group>"; };
 		AC68848DB37B35EAC6190D72 /* libPods-HMUIKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HMUIKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CCF76EA0CDC1DB50A6A9C5 /* libPods-HMUIKitUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HMUIKitUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,6 +137,7 @@
 		04B2F95B21E3B11900943A30 /* HMUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				9BD0A13F21E5B9EF005EF471 /* ctrs */,
 				04D18C7C21E4E98F00713976 /* HMUIKit */,
 				042208F521E3C10000AF8BF2 /* Category */,
 				04B2F95C21E3B11900943A30 /* AppDelegate.h */,
@@ -171,6 +184,10 @@
 			children = (
 				04D18C7E21E4ECE700713976 /* HMPopTriangleBgView.h */,
 				04D18C7F21E4ECE700713976 /* HMPopTriangleBgView.m */,
+				9BD0A14621E5E241005EF471 /* HMVisualEffectView.h */,
+				9BD0A14721E5E241005EF471 /* HMVisualEffectView.m */,
+				9BD0A14921E5E6B1005EF471 /* HMPopViewController.h */,
+				9BD0A14A21E5E6B1005EF471 /* HMPopViewController.m */,
 			);
 			path = UIVIew;
 			sourceTree = "<group>";
@@ -183,6 +200,17 @@
 				C7CCF76EA0CDC1DB50A6A9C5 /* libPods-HMUIKitUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BD0A13F21E5B9EF005EF471 /* ctrs */ = {
+			isa = PBXGroup;
+			children = (
+				9BD0A14021E5BA0C005EF471 /* PopTriangleBgViewController.h */,
+				9BD0A14121E5BA0C005EF471 /* PopTriangleBgViewController.m */,
+				9BD0A14321E5D106005EF471 /* VibrancyEffectViewController.h */,
+				9BD0A14421E5D106005EF471 /* VibrancyEffectViewController.m */,
+			);
+			path = ctrs;
 			sourceTree = "<group>";
 		};
 		C7C8B2DA692B3974F223370A /* Pods */ = {
@@ -262,19 +290,22 @@
 				TargetAttributes = {
 					04B2F95821E3B11900943A30 = {
 						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
 					};
 					04B2F97021E3B11A00943A30 = {
 						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 04B2F95821E3B11900943A30;
 					};
 					04B2F97B21E3B11A00943A30 = {
 						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 04B2F95821E3B11900943A30;
 					};
 				};
 			};
 			buildConfigurationList = 04B2F95421E3B11900943A30 /* Build configuration list for PBXProject "HMUIKit" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -326,15 +357,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-HMUIKit-checkManifestLockResult.txt",
 			);
@@ -350,10 +377,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BD0A14821E5E241005EF471 /* HMVisualEffectView.m in Sources */,
 				04B2F96121E3B11900943A30 /* ViewController.m in Sources */,
+				9BD0A14221E5BA0C005EF471 /* PopTriangleBgViewController.m in Sources */,
 				04B2F96C21E3B11A00943A30 /* main.m in Sources */,
 				04D18C8021E4ECE700713976 /* HMPopTriangleBgView.m in Sources */,
 				04B2F95E21E3B11900943A30 /* AppDelegate.m in Sources */,
+				9BD0A14B21E5E6B1005EF471 /* HMPopViewController.m in Sources */,
+				9BD0A14521E5D106005EF471 /* VibrancyEffectViewController.m in Sources */,
 				042208F821E3C10000AF8BF2 /* NSMutableAttributedString+HMSeting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,11 +558,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4KH7GFK6S;
 				INFOPLIST_FILE = HMUIKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hm.HMUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -544,11 +574,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4KH7GFK6S;
 				INFOPLIST_FILE = HMUIKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hm.HMUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -561,11 +590,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HMUIKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hm.HMUIKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -579,11 +604,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HMUIKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hm.HMUIKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -596,11 +617,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HMUIKitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hm.HMUIKitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -613,11 +630,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HMUIKitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hm.HMUIKitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
