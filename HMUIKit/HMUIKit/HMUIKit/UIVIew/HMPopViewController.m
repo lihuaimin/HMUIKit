@@ -30,9 +30,10 @@
     popCtr.contentView = contentView;
     popCtr.modalPresentationStyle = UIModalPresentationOverFullScreen;
     popCtr.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [popCtr makeUI];
     [inCtr presentViewController:popCtr animated:NO completion:^{
-        __strong typeof(popCtr)strongCtr = popCtr;
-        [strongCtr makeUI];
+//        __strong typeof(popCtr)strongCtr = popCtr;
+//        [strongCtr makeUI];
     }];
 }
 -(void)makeUI{
