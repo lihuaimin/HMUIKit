@@ -100,27 +100,22 @@
     [self startAnimation];
 }
 -(void)endAnimation{
-    [self.view layoutIfNeeded];
-    [self.view setNeedsUpdateConstraints];
     
-    [UIView animateWithDuration:.3 animations:^{
-        __strong typeof(self)ws = self;
-        [ws.contentBgView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.bottom.equalTo(ws.bgView).offset(1000);
-        }];
-        [ws.contentBgView.superview layoutIfNeeded];
-    }];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    
+    
+   
 }
 -(void)startAnimation{
     [self.view layoutIfNeeded];
     [self.view setNeedsUpdateConstraints];
-
     [UIView animateWithDuration:.3 animations:^{
         __strong typeof(self)ws = self;
         [ws.contentBgView mas_updateConstraints:^(MASConstraintMaker *make) {
             if (self.locationStyle == HMPopViewControllerLocationBoom) {
                 make.bottom.equalTo(ws.bgView);
-
+                
             }
             if (self.locationStyle == HMPopViewControllerLocationCenter) {
                 make.center.equalTo(self.bgView);
@@ -130,14 +125,17 @@
             }
         }];
         [ws.contentBgView.superview layoutIfNeeded];
+    } completion:^(BOOL finished) {
+       
+
     }];
+  
 }
 -(void)nothing{
     
 }
 -(void)dismiss{
     [self endAnimation];
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
