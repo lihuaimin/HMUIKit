@@ -83,16 +83,26 @@
         
         make.left.right.equalTo(self.bgView);
         if (self.locationStyle == HMPopViewControllerLocationBoom) {
-            make.bottom.equalTo(self.bgView).offset(2000);//MaxFloat没有动画效果
-        }
-        if (self.locationStyle == HMPopViewControllerLocationCenter) {
-            make.center.equalTo(self.bgView).offset(2000);
-        }
-        if (self.locationStyle == HMPopViewControllerLocationTop) {
-            make.top.equalTo(self.bgView).offset(2000);
-        }
+                            make.bottom.equalTo(self.bgView);
+            
+                        }
+                        if (self.locationStyle == HMPopViewControllerLocationCenter) {
+                            make.center.equalTo(self.bgView);
+                        }
+                        if (self.locationStyle == HMPopViewControllerLocationTop) {
+                            make.top.equalTo(self.bgView);
+                        }
+//        if (self.locationStyle == HMPopViewControllerLocationBoom) {
+//            make.bottom.equalTo(self.bgView).offset(2000);//MaxFloat没有动画效果
+//        }
+//        if (self.locationStyle == HMPopViewControllerLocationCenter) {
+//            make.center.equalTo(self.bgView).offset(2000);
+//        }
+//        if (self.locationStyle == HMPopViewControllerLocationTop) {
+//            make.top.equalTo(self.bgView).offset(2000);
+//        }
     }];
-    
+//    self.contentView.alpha = 0;
     [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsZero);
     }];
@@ -109,6 +119,30 @@
    
 }
 -(void)startAnimation{
+    
+    
+   
+    
+    
+    CABasicAnimation * fadeAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    fadeAnimation.toValue = [NSNumber numberWithFloat:1.0];
+    fadeAnimation.fromValue = [NSNumber numberWithFloat:0];
+    fadeAnimation.duration = .7;
+    CAAnimationGroup * animationGroup = [CAAnimationGroup animation];
+    animationGroup.animations = @[fadeAnimation];
+    animationGroup.duration = .7;
+    [self.contentView.layer addAnimation:animationGroup forKey:@"groupAnimation"];
+    self.contentView.transform = CGAffineTransformMakeTranslation(0, 100);
+
+    [UIView animateWithDuration:.7 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+
+        __strong typeof(self)ws = self;
+        ws.contentView.alpha = 1;
+        ws.contentView.transform = CGAffineTransformIdentity;
+
+    } completion:^(BOOL finished) {
+
+    }];
     [self.view layoutIfNeeded];
     [self.view setNeedsUpdateConstraints];
     [UIView animateWithDuration:.3 animations:^{
@@ -116,7 +150,7 @@
         [ws.contentBgView mas_updateConstraints:^(MASConstraintMaker *make) {
             if (self.locationStyle == HMPopViewControllerLocationBoom) {
                 make.bottom.equalTo(ws.bgView);
-                
+
             }
             if (self.locationStyle == HMPopViewControllerLocationCenter) {
                 make.center.equalTo(self.bgView);
@@ -127,7 +161,7 @@
         }];
         [ws.contentBgView.superview layoutIfNeeded];
     } completion:^(BOOL finished) {
-       
+
 
     }];
   

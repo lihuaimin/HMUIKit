@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.view.backgroundColor = [UIColor orangeColor];
     UIButton * showNormalPop = [UIButton buttonWithType:UIButtonTypeCustom];
     [showNormalPop setTitle:@"showNormalPop" forState:UIControlStateNormal];
@@ -48,6 +49,7 @@
     [showNormalPop addTarget:self action:@selector(showNormalPop) forControlEvents:UIControlEventTouchUpInside];
     [showLightPop addTarget:self action:@selector(showLightPop) forControlEvents:UIControlEventTouchUpInside];
     [showDarkPop addTarget:self action:@selector(showDarkPop) forControlEvents:UIControlEventTouchUpInside];
+     
 }
 -(void)showNormalPop{
     [HMPopViewController showStyle:HMPopViewControllerStyleNormal location:HMPopViewControllerLocationBoom contentView:self.popContentView inController:self];
