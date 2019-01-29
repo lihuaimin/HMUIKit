@@ -32,17 +32,17 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setTitle:@"动画" forState:UIControlStateNormal];
-    [self.view addSubview:button];
-    [button mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(100);
-        make.right.equalTo(self.view);
-    }];
-    [button addTarget:self action:@selector(makeAnimation) forControlEvents:UIControlEventTouchUpInside];
-    [self bgView];
-//    [self.tbView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-//    [self makeData];
+//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [button setTitle:@"动画" forState:UIControlStateNormal];
+//    [self.view addSubview:button];
+//    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(100);
+//        make.right.equalTo(self.view);
+//    }];
+//    [button addTarget:self action:@selector(makeAnimation) forControlEvents:UIControlEventTouchUpInside];
+//    [self bgView];
+    [self.tbView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    [self makeData];
 }
 -(void)makeAnimation{
     [self fadeAnimation];

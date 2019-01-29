@@ -9,6 +9,8 @@
 #import "PopTriangleBgViewController.h"
 #import "HMPopTriangleBgView.h"
 #import <Masonry.h>
+#import "HMPPView.h"
+#import "HMPPViView.h"
 @interface PopTriangleBgViewController ()
 
 @end
@@ -18,8 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = UIColor.whiteColor;
-    HMPopTriangleBgView * topbgView = [[HMPopTriangleBgView alloc]initWithTriangleDirection:HMTriangleDirectionTop fillColor:UIColor.orangeColor shadowColor:UIColor.clearColor];
+    self.view.backgroundColor = UIColor.redColor;
+//    HMPopTriangleBgView * topbgView = [[HMPopTriangleBgView alloc]initWithTriangleDirection:HMTriangleDirectionTop fillColor:UIColor.orangeColor shadowColor:UIColor.clearColor];
+    HMPPView * topbgView = [HMPPView new];
     [self.view addSubview:topbgView];
     [topbgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view);
@@ -45,7 +48,7 @@
         make.width.mas_equalTo(50);
         make.height.mas_equalTo(200);
     }];
-    HMPopTriangleBgView * boombgView = [[HMPopTriangleBgView alloc]initWithTriangleDirection:HMTriangleDirectionBoom fillColor:UIColor.orangeColor shadowColor:UIColor.clearColor];
+    HMPPViView * boombgView = [HMPPViView new];
     [self.view addSubview:boombgView];
     [boombgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view);

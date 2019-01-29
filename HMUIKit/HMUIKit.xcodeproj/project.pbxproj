@@ -17,7 +17,10 @@
 		04B2F98121E3B11A00943A30 /* HMUIKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B2F98021E3B11A00943A30 /* HMUIKitUITests.m */; };
 		04D18C8021E4ECE700713976 /* HMPopTriangleBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D18C7F21E4ECE700713976 /* HMPopTriangleBgView.m */; };
 		9345445174A2DF41ED48743C /* libPods-HMUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDBE629CF8255C7330ADCB5 /* libPods-HMUIKit.a */; };
-		9B85A5CF21F6B3E800FD1838 /* NSMutableAttributedString+HMSeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B85A5CB21F6B3E800FD1838 /* NSMutableAttributedString+HMSeting.m */; };
+		9BC9117B21F952AE0013DB1D /* NSMutableAttributedString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC9117A21F952AE0013DB1D /* NSMutableAttributedString+Extension.m */; };
+		9BC9117E21F955420013DB1D /* UIView+Triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC9117D21F955420013DB1D /* UIView+Triangle.m */; };
+		9BC9118121F95BDE0013DB1D /* HMPPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC9118021F95BDE0013DB1D /* HMPPView.m */; };
+		9BC9118421F961A20013DB1D /* HMPPViView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC9118321F961A20013DB1D /* HMPPViView.m */; };
 		9BD0A14221E5BA0C005EF471 /* PopTriangleBgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A14121E5BA0C005EF471 /* PopTriangleBgViewController.m */; };
 		9BD0A14521E5D106005EF471 /* VibrancyEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A14421E5D106005EF471 /* VibrancyEffectViewController.m */; };
 		9BD0A14821E5E241005EF471 /* HMVisualEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0A14721E5E241005EF471 /* HMVisualEffectView.m */; };
@@ -63,8 +66,14 @@
 		41B5ABB65BEF73844E19858D /* Pods-HMUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-HMUIKit/Pods-HMUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		5EF608F3C4B5F4270A87BEB6 /* Pods-HMUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HMUIKit/Pods-HMUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		7CDBE629CF8255C7330ADCB5 /* libPods-HMUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HMUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B85A5CB21F6B3E800FD1838 /* NSMutableAttributedString+HMSeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+HMSeting.m"; sourceTree = "<group>"; };
-		9B85A5CE21F6B3E800FD1838 /* NSMutableAttributedString+HMSeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+HMSeting.h"; sourceTree = "<group>"; };
+		9BC9117921F952AE0013DB1D /* NSMutableAttributedString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Extension.h"; sourceTree = "<group>"; };
+		9BC9117A21F952AE0013DB1D /* NSMutableAttributedString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Extension.m"; sourceTree = "<group>"; };
+		9BC9117C21F955420013DB1D /* UIView+Triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Triangle.h"; sourceTree = "<group>"; };
+		9BC9117D21F955420013DB1D /* UIView+Triangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Triangle.m"; sourceTree = "<group>"; };
+		9BC9117F21F95BDE0013DB1D /* HMPPView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMPPView.h; sourceTree = "<group>"; };
+		9BC9118021F95BDE0013DB1D /* HMPPView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMPPView.m; sourceTree = "<group>"; };
+		9BC9118221F961A20013DB1D /* HMPPViView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMPPViView.h; sourceTree = "<group>"; };
+		9BC9118321F961A20013DB1D /* HMPPViView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMPPViView.m; sourceTree = "<group>"; };
 		9BD0A14021E5BA0C005EF471 /* PopTriangleBgViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopTriangleBgViewController.h; sourceTree = "<group>"; };
 		9BD0A14121E5BA0C005EF471 /* PopTriangleBgViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopTriangleBgViewController.m; sourceTree = "<group>"; };
 		9BD0A14321E5D106005EF471 /* VibrancyEffectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VibrancyEffectViewController.h; sourceTree = "<group>"; };
@@ -106,8 +115,10 @@
 		042208F521E3C10000AF8BF2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				9B85A5CE21F6B3E800FD1838 /* NSMutableAttributedString+HMSeting.h */,
-				9B85A5CB21F6B3E800FD1838 /* NSMutableAttributedString+HMSeting.m */,
+				9BC9117921F952AE0013DB1D /* NSMutableAttributedString+Extension.h */,
+				9BC9117A21F952AE0013DB1D /* NSMutableAttributedString+Extension.m */,
+				9BC9117C21F955420013DB1D /* UIView+Triangle.h */,
+				9BC9117D21F955420013DB1D /* UIView+Triangle.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -188,6 +199,10 @@
 				9BD0A14721E5E241005EF471 /* HMVisualEffectView.m */,
 				9BD0A14921E5E6B1005EF471 /* HMPopViewController.h */,
 				9BD0A14A21E5E6B1005EF471 /* HMPopViewController.m */,
+				9BC9117F21F95BDE0013DB1D /* HMPPView.h */,
+				9BC9118021F95BDE0013DB1D /* HMPPView.m */,
+				9BC9118221F961A20013DB1D /* HMPPViView.h */,
+				9BC9118321F961A20013DB1D /* HMPPViView.m */,
 			);
 			path = UIVIew;
 			sourceTree = "<group>";
@@ -378,13 +393,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BD0A14821E5E241005EF471 /* HMVisualEffectView.m in Sources */,
+				9BC9118121F95BDE0013DB1D /* HMPPView.m in Sources */,
 				04B2F96121E3B11900943A30 /* ViewController.m in Sources */,
+				9BC9117E21F955420013DB1D /* UIView+Triangle.m in Sources */,
+				9BC9117B21F952AE0013DB1D /* NSMutableAttributedString+Extension.m in Sources */,
 				9BD0A14221E5BA0C005EF471 /* PopTriangleBgViewController.m in Sources */,
 				04B2F96C21E3B11A00943A30 /* main.m in Sources */,
 				04D18C8021E4ECE700713976 /* HMPopTriangleBgView.m in Sources */,
 				04B2F95E21E3B11900943A30 /* AppDelegate.m in Sources */,
 				9BD0A14B21E5E6B1005EF471 /* HMPopViewController.m in Sources */,
-				9B85A5CF21F6B3E800FD1838 /* NSMutableAttributedString+HMSeting.m in Sources */,
+				9BC9118421F961A20013DB1D /* HMPPViView.m in Sources */,
 				9BD0A14521E5D106005EF471 /* VibrancyEffectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

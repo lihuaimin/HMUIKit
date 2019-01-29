@@ -1,14 +1,14 @@
 //
-//  NSMutableAttributedString+HMSeting.m
+//  NSMutableAttributedString+Extension.m
 //  HMUIKit
 //
-//  Created by mac on 2019/1/8.
+//  Created by lee on 2019/1/24.
 //  Copyright © 2019 lhm. All rights reserved.
 //
 
-#import "NSMutableAttributedString+HMSeting.h"
+#import "NSMutableAttributedString+Extension.h"
 
-@implementation NSMutableAttributedString (HMSeting)
+@implementation NSMutableAttributedString (Extension)
 -(void)addColor:(UIColor *)color{
     [self addColor:color rangeString:self.string];
 }
@@ -35,7 +35,7 @@
     [self addAttribute:NSFontAttributeName value:font range:[self.string rangeOfString:rangeString]];
 }
 -(void)addDeleStyle:(NSUnderlineStyle)style{
-
+    
     [self addDeleStyle:style rangeString:self.string];
 }
 
@@ -43,4 +43,3 @@
     [self addAttribute:NSStrikethroughStyleAttributeName value:@(NSUnderlineStyleSingle) range:[self.string rangeOfString:rangeString]];
 }
 @end
-
